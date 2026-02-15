@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dziękuję za zakup – Niemiecki w praktyce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Inter',sans-serif;
+            background: #0d1117;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .box {
+            background: #1b1f2a;
+            padding: 60px 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,.6);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            opacity: .9;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background: #ff5c00;
+            color: #fff;
+            padding: 18px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: .3s;
+        }
+
+            .download-btn:hover {
+                background: #ff3d00;
+                transform: translateY(-3px);
+            }
+
+        .small {
+            font-size: 14px;
+            opacity: .6;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>🎉 Płatność zakończona sukcesem!</h1>
+
+        <p>
+            Dziękuję za zakup eBooka <strong>„Niemiecki w praktyce”</strong>.
+        </p>
+
+        <p>
+            Kliknij poniżej, aby pobrać swój egzemplarz:
+        </p>
+
+        <!-- TU MUSISZ PODAĆ NAZWĘ SWOJEGO PLIKU PDF -->
+        <a href="Ich liebe es, Deutsch zu lernen..pdf" download class="download-btn">
+            📥 Pobierz eBook teraz
+        </a>
+
+        <div class="small">
+            Jeśli pobieranie nie rozpocznie się automatycznie — kliknij prawym przyciskiem i wybierz „Zapisz jako”.
+        </div>
+    </div>
+
+</body>
+</html>
