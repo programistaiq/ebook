@@ -43,55 +43,51 @@
             line-height: 1.6;
         }
 
-        .highlight {
-            color: #ff5c00;
-            font-weight: 700;
-        }
-
-        .btn {
+        .download-btn {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 25px;
             background: #ff5c00;
             color: #fff;
-            padding: 14px 26px;
-            border-radius: 10px;
+            padding: 18px 30px;
+            border-radius: 12px;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 800;
+            font-size: 1.1rem;
             transition: .3s;
         }
 
-            .btn:hover {
+            .download-btn:hover {
                 background: #ff3d00;
+                transform: translateY(-3px);
             }
 
         .small {
             font-size: 14px;
             opacity: .6;
-            margin-top: 25px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
     <div class="box">
-        <h1>🎉 Dziękuję za zakup!</h1>
+        <h1>🎉 Płatność zakończona sukcesem!</h1>
 
         <p>
-            Twoja płatność została pomyślnie zrealizowana.
-        </p>
-
-        <p class="highlight">
-            eBook wysyłam automatycznie na adres e-mail podany przy płatności.
+            Dziękuję za zakup eBooka <strong>„Niemiecki w praktyce”</strong>.
         </p>
 
         <p>
-            Jeśli nie widzisz wiadomości, sprawdź folder SPAM lub Oferty.
+            Kliknij poniżej, aby pobrać swój egzemplarz:
         </p>
 
-        <a href="index.html" class="btn">Wróć na stronę główną</a>
+        <!-- TU MUSISZ PODAĆ NAZWĘ SWOJEGO PLIKU PDF -->
+        <a href="ebook-niemiecki.pdf" download class="download-btn">
+            📥 Pobierz eBook teraz
+        </a>
 
         <div class="small">
-            Produkt cyfrowy • Dostawa elektroniczna
+            Jeśli pobieranie nie rozpocznie się automatycznie — kliknij prawym przyciskiem i wybierz „Zapisz jako”.
         </div>
     </div>
 
